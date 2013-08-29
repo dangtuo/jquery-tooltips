@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<title>jquery tooltips</title>
+    <meta charset="utf-8">
+    <link href="css/jquery.tooltips.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="css/doc.css" media="all" rel="stylesheet" type="text/css" />
+	
+	<script src="http://libs.baidu.com/jquery/1.8.3/jquery.js"></script>
+    <!-- 
+    <script src="js/jquery-1.8.3.min.js" type="text/javascript"></script>
+     -->
+    <script src="js/jquery.tooltips.js" type="text/javascript"></script>	
+</head>
+<body>
+
+<div class="container" id="container">
+<h2>Jquery Tooltips 演示说明文档</h2>
+	<hr>
+<h3>1，DEMO：</h3>
+
+<!-- code for tips -->
+
+	<div class="tuo-tooltip" data-position="top">
+		tips demo 居上 
+		<div class="tuo-popover">
+			<div class="tuo-popover-content">
+				看到网上说现在存折里不到十万不叫存款，叫余额。审视了一下自己，原来我的只能叫利息。。。
+			</div>
+		</div>
+	</div>
+	<hr>
+
+	<div class="tuo-tooltip" data-position="left">
+		tips demo 居左
+		<div class="tuo-popover">
+			<div class="tuo-popover-content">
+				<a href="http://www.tuolib.com/jquery-tooltips/">返回相关文章</a>
+			</div>
+		</div>
+	</div>
+	<hr>
+
+	<div class="tuo-tooltip" data-position="right">
+		tips demo 居右
+		<div class="tuo-popover">
+			<div class="tuo-popover-content">
+				<a href="http://www.tuolib.com/jquery-tooltips/">返回相关文章</a>
+			</div>
+		</div>
+	</div>
+	<hr>
+
+	<div class="tuo-tooltip" data-position="right">
+		tips demo 图片内容
+		<div class="tuo-popover">
+			<div class="tuo-popover-content">
+				<img src="http://www.baidu.com/img/bdlogo.gif">
+			</div>
+
+		</div>
+	</div>
+	<hr>
+	<div class="tuo-tooltip" data-position="bottom">
+		tips demo 居下
+		<div class="tuo-popover">
+			<div class="tuo-popover-content">
+				<a href="http://www.baidu.com/">link to baidu</a>
+			</div>
+
+		</div>
+	</div>	
+	<hr>
+<!-- // code for tips -->
+<h3>2，使用说明&API：</h3>
+<h4>a) 如何使用</h4>
+<pre>
+1,需要引入相关js&css （jquery 1.7+ ）。如：
+<script src="http://libs.baidu.com/jquery/1.8.3/jquery.js"></script>
+<script src="js/jquery.tooltips.js" type="text/javascript"></script>
+<link href="css/jquery.tooltips.css" media="all" rel="stylesheet" type="text/css" />
+
+2,构建html结构
+<div class="tuo-tooltip" data-position="bottom">
+	tips demo 居下
+	<div class="tuo-popover">
+		<div class="tuo-popover-content">
+			<a href="http://www.baidu.com/">link to baidu</a>
+		</div>
+	</div>
+</div>
+Tips:请直接复制结构使用即可，最外层“tuo-tooltip”可以是任意html标签 
+</pre>
+<h4>b) API</h4>
+<pre>
+所有API都是在html里面配置
+
+1,tips显示位置：
+data-position         可选参数：top | right | bottom | left
+</pre>
+
+<h4>c) 兼容性？</h4>
+<pre>
+一句话IE6没问题！
+</pre>
+
+<h4>d) 和其它的tooltips组件有什么不同？</h4>
+<pre>
+1，不用单独写js，只需要配置html即可
+2，tooltip中的内容可选择，进行复制等操作。
+</pre>
+<hr>
+<h3>END THANKS!</h3>
+</div>
+<script type="text/javascript">
+// Just for doc
+ $('pre').each(function(index,element){
+    var html = $(element).html();
+    $(element).html(html.replace(/</g,'&lt;').replace(/>/g,'&gt;'));
+ });
+</script>
+</body>
+</html>

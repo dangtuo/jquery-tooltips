@@ -1,0 +1,67 @@
+/*css reset*/
+body, div, dl, dt, dd, ul, ol, li,
+h1, h2, h3, h4, h5, h6, pre, code,
+form, fieldset, legend, input, button,
+textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+/*for tooltip*/
+.tuo-popover{position: absolute; display: none;}
+
+
+.tuo-popover {   
+  padding: 8px;
+  max-width: 300px;
+  width: auto !important;
+  width: 300px;
+  overflow: hidden;
+  /*background: #fff;*/
+}
+
+.tuo-popover-content{
+  padding: 14px;
+  background: #fff;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+}
+.svg-triangle{
+  position: absolute;
+  width: 8px;
+  height: 8px;
+}		
+
+.tuo-popover.right .svg-triangle{
+  left: 1px;
+  top: 50%;
+  margin-top:-3px;
+}
+
+.tuo-popover.left .svg-triangle{
+  right: 0px;
+  top: 50%;
+  margin-top:-3px;
+}
+
+.tuo-popover.top .svg-triangle{
+  bottom: 0px;
+  left: 50%;
+  margin-left:-4px;
+}
+
+.tuo-popover.bottom .svg-triangle{
+  top: 1px;
+  left: 50%;
+  margin-left:-4px;
+}
+.svg-triangle polygon {
+	fill:#ff0000;
+	stroke-width:0;
+}
+
+
